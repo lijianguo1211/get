@@ -5,3 +5,5 @@
 新建分支与远程分支做关联 git checkout -b develop origin/develop
 
 查看当前远程分支 git branch -a | git branch -r
+
+创建分支 git branch test
