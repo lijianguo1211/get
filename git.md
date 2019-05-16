@@ -5,3 +5,18 @@
 新建分支与远程分支做关联 git checkout -b develop origin/develop
 
 查看当前远程分支 git branch -a | git branch -r
+
+创建分支test git branch test 
+
+查看分支 git branch
+
+
+### 工作流
+
+* 基于master分支新创建一个本地工作分支
+
+```git
+git checkout -b bug-test-jayli master
+```
+
+ 
