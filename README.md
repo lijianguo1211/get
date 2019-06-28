@@ -68,7 +68,7 @@
     
         * [SimpleInterest.php](./DesignPatterns/单利模式/Simple_Interest.php)
         
-        * [SimpleInterest.php](./DesignPatterns/单利模式/Simple_Interest.md)
+        * [SimpleInterest.md](./DesignPatterns/单利模式/Simple_Interest.md)
         
     * [依赖注入](./DesignPatterns/依赖注入，控制反转)
         
