@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-excel/import/bootstrap-fileinput" vcs="Git" />
-  </component>
-</project>
