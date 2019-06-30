@@ -4,7 +4,25 @@
     <bookmark url="file://$PROJECT_DIR$/README.md" line="62" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="710af091-1a06-422e-9907-bf820145fa5c" name="Default Changelist" comment="" />
+    <list default="true" id="710af091-1a06-422e-9907-bf820145fa5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/container.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/controller/DatabaseLog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/controller/FileLog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/controller/Logs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/controller/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/reflex/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/routine/DatabaseLog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/routine/FileLog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/routine/InterfaceLog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/routine/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/观察者/Guan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/观察者/observer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/get.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,19 +35,21 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/DependencyInjection.php">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DesignPatterns/观察者/Guan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-528" />
+            <state relative-caret-position="1418">
+              <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DesignPatterns/观察者/observer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="1418">
+              <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -49,18 +69,20 @@
         <option value="$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/DependencyInjection.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/DesignPatterns/观察者/Guan.php" />
+        <option value="$PROJECT_DIR$/DesignPatterns/观察者/observer.php" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="312" />
-    <option name="y" value="63" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-29" />
+    <option name="y" value="6" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -68,6 +90,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -78,29 +101,24 @@
             <path>
               <item name="get" type="b2602c69:ProjectViewProjectNode" />
               <item name="get" type="462c0819:PsiDirectoryNode" />
-              <item name="Liunx" type="462c0819:PsiDirectoryNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="get" type="b2602c69:ProjectViewProjectNode" />
               <item name="get" type="462c0819:PsiDirectoryNode" />
-              <item name="Mysql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="get" type="b2602c69:ProjectViewProjectNode" />
-              <item name="get" type="462c0819:PsiDirectoryNode" />
-              <item name="Nginx" type="462c0819:PsiDirectoryNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="观察者" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/phpStudy/PHPTutorial/WWW/lijianguo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -124,12 +142,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.observer.php">
+    <configuration name="Guan.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/DesignPatterns/观察者/Guan.php">
+      <method v="2" />
+    </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="observer.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/DesignPatterns/观察者/observer.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.observer.php" />
+        <item itemvalue="PHP Script.Guan.php" />
         <item itemvalue="PHP Script.index.php" />
       </list>
     </recent_temporary>
@@ -146,21 +172,23 @@
       <updated>1557974744400</updated>
       <workItem from="1557974745703" duration="4594000" />
       <workItem from="1561731631768" duration="5074000" />
+      <workItem from="1561803894417" duration="711000" />
+      <workItem from="1561805634646" duration="9817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10723000" />
+    <option name="totallyTimeSpent" value="21251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22239032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32925472" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5421903" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -233,13 +261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Liunx/liunx.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -275,8 +296,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatterns/依赖注入，控制反转/DependencyInjection.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528" />
+        <state relative-caret-position="22">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesignPatterns/观察者/Guan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1418">
+          <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesignPatterns/观察者/observer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1418">
+          <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+        </state>
       </provider>
     </entry>
   </component>
