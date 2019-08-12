@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * 抽象访问者
+ * Interface VisitorInterface
+ */
 interface VisitorInterface
 {
     public function vistUser(User $user);
@@ -7,6 +11,13 @@ interface VisitorInterface
     public function vietGroup(Group $group);
 }
 
+/**
+ * Notes:具体访问者
+ * User: LiYi
+ * Date: 2019/7/28
+ * Time: 16:14
+ * Class Visitor
+ */
 class Visitor implements VisitorInterface
 {
     private $visitor = [];
@@ -29,11 +40,22 @@ class Visitor implements VisitorInterface
     }
 }
 
+/**
+ * 抽象元素
+ * Interface Role
+ */
 interface Role
 {
     public function accept(VisitorInterface $visitor);
 }
 
+/**
+ * Notes: 具体元素之用户
+ * User: LiYi
+ * Date: 2019/7/28
+ * Time: 16:15
+ * Class User
+ */
 class User implements Role
 {
     private $name;
@@ -55,6 +77,13 @@ class User implements Role
     }
 }
 
+/**
+ * Notes: 具体元素之分组
+ * User: LiYi
+ * Date: 2019/7/28
+ * Time: 16:15
+ * Class Group
+ */
 class Group implements Role
 {
     private $name;
@@ -77,7 +106,13 @@ class Group implements Role
 }
 
 
-
+/**
+ * Notes:对象结构
+ * User: LiYi
+ * Date: 2019/7/28
+ * Time: 16:15
+ * Class test
+ */
 class test
 {
     private $visitor;
@@ -95,7 +130,9 @@ class test
 
         $dd = $this->visitor->getVisitor();
 
-        var_dump($dd);
+        foreach ($dd as $item) {
+            var_dump($item->getName());
+        }
     }
 }
 
