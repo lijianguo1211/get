@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="320c8787-2538-47ea-b767-71249a063e02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/PermissionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/PostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/RoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/database/migrations/create_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/MiddlewareModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/Permission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/errors/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission.md" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/laravel-permission.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,19 +36,61 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission.md">
+        <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/laravel-permission.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="325">
-                <caret line="232" column="53" selection-start-line="232" selection-start-column="53" selection-end-line="232" selection-end-column="53" />
+              <first_editor relative-caret-position="391">
+                <caret line="1216" column="68" selection-start-line="1216" selection-start-column="68" selection-end-line="1216" selection-end-column="68" />
                 <folding>
+                  <element signature="e#7650#11946#0" />
                   <element signature="e#6#44#0" expanded="true" />
-                  <element signature="e#31#70#0" expanded="true" />
                 </folding>
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+              <folding>
+                <element signature="e#1170#1196#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/RoleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="174" selection-end-column="1" />
+              <folding>
+                <element signature="n#RoleController#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,6 +104,29 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission.md" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/UserControler.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/database/migrations/create_posts_table.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/PostController.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/MiddlewareModel.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/errors/list.blad.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/Post.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/index.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/create.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/show.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/edit.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/UserController.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/index.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/create.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/edit.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/PermissionController.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/index.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/create.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/edit.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/RoleController.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/index.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/create.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/edit.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/laravel-permission.md" />
       </list>
     </option>
   </component>
@@ -85,6 +168,51 @@
               <item name="PHP-frame" type="462c0819:PsiDirectoryNode" />
               <item name="laravel" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="get" type="b2602c69:ProjectViewProjectNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP-frame" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-permission" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="get" type="b2602c69:ProjectViewProjectNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP-frame" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-permission" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="get" type="b2602c69:ProjectViewProjectNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP-frame" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-permission" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="get" type="b2602c69:ProjectViewProjectNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP-frame" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-permission" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="get" type="b2602c69:ProjectViewProjectNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP" type="462c0819:PsiDirectoryNode" />
+              <item name="PHP-frame" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-permission" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -101,6 +229,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\WWW\get\PHP\PHP-frame\laravel\laravel-persission" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -125,18 +258,19 @@
       <option name="presentableId" value="Default" />
       <updated>1565499132714</updated>
       <workItem from="1565499134339" duration="662000" />
-      <workItem from="1565878637815" duration="2206000" />
+      <workItem from="1565878637815" duration="2920000" />
+      <workItem from="1566030972007" duration="8845000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3024000" />
+    <option name="totallyTimeSpent" value="12583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19288956" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21709532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -178,14 +312,216 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission.md">
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/Permission.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/Role.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/User.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/database/migration.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/database/migrations/create_posts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="19" column="11" lean-forward="true" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/MiddlewareModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="111" selection-end-column="1" />
+          <folding>
+            <element signature="n#MiddlewareModel#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="139" selection-end-column="1" />
+          <folding>
+            <element signature="n#PostController#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/errors/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#510#538#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="158" column="5" lean-forward="true" selection-end-line="166" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+          <folding>
+            <element signature="e#1347#1373#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/PermissionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="168" selection-end-column="1" />
+          <folding>
+            <element signature="n#PermissionController#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding>
+            <element signature="e#980#1006#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/RoleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="174" selection-end-column="1" />
+          <folding>
+            <element signature="n#RoleController#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+          <folding>
+            <element signature="e#1170#1196#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/laravel-permission.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="325">
-            <caret line="232" column="53" selection-start-line="232" selection-start-column="53" selection-end-line="232" selection-end-column="53" />
+          <first_editor relative-caret-position="391">
+            <caret line="1216" column="68" selection-start-line="1216" selection-start-column="68" selection-end-line="1216" selection-end-column="68" />
             <folding>
+              <element signature="e#7650#11946#0" />
               <element signature="e#6#44#0" expanded="true" />
-              <element signature="e#31#70#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
