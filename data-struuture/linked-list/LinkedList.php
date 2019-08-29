@@ -39,6 +39,41 @@ class LinkedList
         $temp->next = $headNodel;
     }
 
+    public function addByOrder(HeadNodel $headNodel)
+    {
+        //头节点不能动，通过辅助指针，来找到添加的位置
+        //单链表，找的辅助指针，是位于辅助指针的前一个节点
+        $temp = $this->head;
+        $flag = false;//标识，标识是否存在
+
+        while (true) {
+            if ($temp->next === null) {
+                break;//代表最后一个节点
+            }
+
+            if ($temp->next->no > $headNodel->no) {
+                //代表要插入的节点编号小于后一个节点标号，所以可以插入了,退出循环
+                break;
+            } elseif ($temp->next->no === $headNodel->no) {
+                //代表要插入的节点编号已经存在
+                $flag = true;
+                break;
+            }
+            $temp = $temp->next;//后移，继续遍历
+        }
+
+        if ($flag) {
+            //编号存在，不能添加
+            return sprintf("准备插入的编号已存在，不能插入：%d\n", $headNodel->no);
+        } else {
+            //新添加节点的next域 = 把临时指针的next域指
+            $headNodel->next = $temp->next;
+
+            //把临时节点的next域指向新插入节点
+            $temp->next = $headNodel;
+        }
+    }
+
     /**
      * Notes:打印链表
      * Name: getList
@@ -89,11 +124,11 @@ class HeadNodel
     public function __toString()
     {
         // TODO: Implement __toString() method.
-        return sprintf("编号是：%d,英雄是：%s,昵称是：%s, 下一个节点是：%s\n",
+        return sprintf("编号是：%d,英雄是：%s,昵称是：%s\n",
             $this->no,
             $this->name,
-            $this->nickname,
-            $this->next
+            $this->nickname
+            //$this->next
         );
     }
 }
@@ -105,10 +140,18 @@ $test4 = new HeadNodel(4, '林冲', '豹子头');
 $test5 = new HeadNodel(5, '武松', '打虎');
 
 $obj = new LinkedList();
-$obj->add($test1);
+/*$obj->add($test1);
 $obj->add($test2);
 $obj->add($test3);
 $obj->add($test4);
-$obj->add($test5);
+$obj->add($test5);*/
+
+$obj->addByOrder($test1);
+$obj->addByOrder($test5);
+$obj->addByOrder($test3);
+$obj->addByOrder($test4);
+$obj->addByOrder($test2);
+$obj->addByOrder($test2);
+$obj->addByOrder($test1);
 
 $obj->getList();

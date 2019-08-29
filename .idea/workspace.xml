@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="320c8787-2538-47ea-b767-71249a063e02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-struuture/linked-list/LinkedList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-struuture/linked-list/linked-list.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-struuture/linked-list/linked-1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-struuture/linked-list/LinkedList.php" beforeDir="false" afterPath="$PROJECT_DIR$/data-struuture/linked-list/LinkedList.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data-struuture/linked-list/LinkedList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+            <state relative-caret-position="103">
+              <caret line="126" column="48" lean-forward="true" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -99,6 +98,17 @@
               <item name="get" type="b2602c69:ProjectViewProjectNode" />
               <item name="get" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="get" type="b2602c69:ProjectViewProjectNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
+              <item name="data-struuture" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="get" type="b2602c69:ProjectViewProjectNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
+              <item name="data-struuture" type="462c0819:PsiDirectoryNode" />
+              <item name="linked-list" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -108,7 +118,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data-struuture/linked-list" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -117,6 +127,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\WWW\get\data-struuture\linked-list" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\WWW\get\PHP\PHP-frame\laravel\laravel-persission" />
     </key>
@@ -157,23 +170,24 @@
       <workItem from="1565878637815" duration="2920000" />
       <workItem from="1566030972007" duration="8845000" />
       <workItem from="1566096158747" duration="1068000" />
-      <workItem from="1567004857133" duration="3580000" />
+      <workItem from="1567004857133" duration="3717000" />
+      <workItem from="1567090429045" duration="3940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17231000" />
+    <option name="totallyTimeSpent" value="21308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22314675" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22617246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46499103" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46499103" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -432,8 +446,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data-struuture/linked-list/LinkedList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="103">
+          <caret line="126" column="48" lean-forward="true" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
         </state>
       </provider>
     </entry>
