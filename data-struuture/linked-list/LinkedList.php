@@ -39,6 +39,15 @@ class LinkedList
         $temp->next = $headNodel;
     }
 
+    /**
+     * Notes: 添加指定顺序的节点
+     * Name: addByOrder
+     * User: LiYi
+     * Date: 2019/9/1
+     * Time: 23:04
+     * @param HeadNodel $headNodel
+     * @return string
+     */
     public function addByOrder(HeadNodel $headNodel)
     {
         //头节点不能动，通过辅助指针，来找到添加的位置
@@ -72,6 +81,142 @@ class LinkedList
             //把临时节点的next域指向新插入节点
             $temp->next = $headNodel;
         }
+    }
+
+    /**
+     * Notes: 根据id修改节点，
+     * Name: updateNode
+     * User: LiYi
+     * Date: 2019/9/1
+     * Time: 23:14
+     * @param HeadNodel $headNodel
+     * @return string
+     */
+    public function updateNode(HeadNodel $headNodel)
+    {
+        if ($this->head->next === null) {
+            return sprintf('链表为空');
+        }
+
+        //定义一个辅助节点
+        $temp = $this->head->next;
+        $flag = false;
+
+        while (true) {
+            if ($temp->next === null) {
+                break;//遍历结束
+            }
+
+            if ($temp->no === $headNodel->no) {
+                $flag = true;//找到了
+                break;
+            }
+        }
+
+        if ($flag) {
+            //修改
+            $temp->name = $headNodel->name;
+            $temp->nickname = $headNodel->nickname;
+        } else {
+            return sprintf('链表中不存在该节点');
+        }
+    }
+
+    /**
+     * Notes: 删除节点
+     * Name: deleteNode
+     * User: LiYi
+     * Date: 2019/9/1
+     * Time: 23:27
+     * @param int $num
+     * @return string
+     */
+    public function deleteNode(int $num)
+    {
+        //单链表删除节点
+        //定义一个辅助节点，找到待删除节点的前一个节点
+        //temp->next = temp->next->next
+        //比较 temp->next->no 和待删除节点的no比较
+        $temp = $this->head;
+        $flag = false;//代表是否找到节点
+        while (true) {
+            if ($temp->next === null) {
+                break;//遍历到最后一个节点
+            }
+
+            if ($temp->next->no === $num) {
+                $flag = true;//找到待删除节点
+                break;
+            }
+
+            $temp = $temp->next;
+        }
+
+        if ($flag) {
+            $temp->next = $temp->next->next;
+        } else {
+            return sprintf('没有找到待删除节点');
+        }
+    }
+
+    /**
+     * Notes:带头链表的有效节点个数
+     * Name: getLengthLinked
+     * User: LiYi
+     * Date: 2019/9/1
+     * Time: 23:41
+     * @return int
+     */
+    public function getLengthLinked() :int
+    {
+        if ($this->head->next === null) {
+            return 0;
+        }
+
+        $length = 0;
+        $temp = $this->head->next;
+
+        while ($temp != null) {
+            $length++;
+            $temp = $temp->next;
+        }
+
+        return $length-1;
+    }
+
+
+    /**
+     * Notes:查找单链表的倒数第k个节点
+     * Name: findLastIndexNode
+     * User: LiYi
+     * Date: 2019/9/2
+     * Time: 0:03
+     * @param int $index 表示倒数第几个节点
+     * @return null | HeadNodel
+     */
+    public function findLastIndexNode(int $index)
+    {
+        // $index
+        // 从头到尾的遍历，得到链表有效节点个数（长度）$size
+        // 得到链表长度后，再次遍历链表，遍历链表长度$size-$index 个
+        if ($this->head->next === null) {
+            return null;
+        }
+
+        //链表长度
+        $size = $this->getLengthLinked();
+
+        if ($index <= 0 || $index > $size) {
+            return null;
+        }
+
+        //遍历
+        $cur = $this->head->next;
+        for ($i = 0; $i < $size-$index; $i++) {
+            $cur = $cur->next;
+        }
+
+        return $cur;
     }
 
     /**
