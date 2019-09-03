@@ -181,7 +181,7 @@ class LinkedList
             $temp = $temp->next;
         }
 
-        return $length-1;
+        return $length;
     }
 
 
@@ -218,6 +218,50 @@ class LinkedList
 
         return $cur;
     }
+
+    //反转单链表 思路
+    //1.定义一个新的链表 reverseHead = new HeroHead();
+    //2.从头遍历原来的链表，美遍历一个节点，将其取出，并放在新的链表的最前端
+    //3.原来的链表 head->next = reverseHead->next;
+    public function reverseLinedList(HeadNodel $linkedList)
+    {
+        if ($this->head->next === null || $this->head->next->next === null) {
+            return printf('链表为空或链表只有一条数据');
+        }
+        //辅助指针
+        $temp = $this->head->next;
+        //指向当前节点[$temp]的下一个节点
+        $next = null;
+        $reverseHead = $linkedList;//辅助新的链表
+
+        //遍历原来的链表
+        while ($temp != null) {
+            $next = $temp->next;//保存当前节点的下一个节点
+            $temp->next = $reverseHead->next;//将辅助指针的下一个节点指向新链表的最前端
+            $reverseHead->next = $temp;
+            $temp = $next;//辅助指针后移
+        }
+        //将$this->head->next = $reverseHead->next
+        $this->head->next = $reverseHead->next;
+    }
+
+    public function printfLinkedList()
+    {
+        if ($this->head->next === null) {
+            return printf('链表为空');
+        }
+        $temp = [];
+        $linked = $this->head->next;
+        while ($linked != null) {
+            array_push($temp, serialize($linked));
+            $linked = $linked->next;
+        }
+        while (count($temp) > 0) {
+            $str = array_pop($temp);
+            printf(unserialize($str));
+        }
+    }
+
 
     /**
      * Notes:打印链表
@@ -296,7 +340,16 @@ $obj->addByOrder($test5);
 $obj->addByOrder($test3);
 $obj->addByOrder($test4);
 $obj->addByOrder($test2);
-$obj->addByOrder($test2);
-$obj->addByOrder($test1);
 
 $obj->getList();
+echo "\n";
+echo $obj->findLastIndexNode(1);
+
+echo "\n";
+echo $obj->getLengthLinked();
+echo "\n";
+$obj->reverseLinedList(new HeadNodel(0, '', ''));
+echo "\n";
+$obj->getList();
+echo "\n";
+$obj->printfLinkedList();
