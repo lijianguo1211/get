@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="24e5b780-ffb8-4e80-bf52-61335c639b04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
@@ -8,6 +9,11 @@
       <change beforePath="$PROJECT_DIR$/HTTP/HTTP首部/HTTP-HEAD.md" beforeDir="false" afterPath="$PROJECT_DIR$/HTTP/HTTP首部/HTTP-HEAD.md" afterDir="false" />
 =======
 >>>>>>> a1cb29c859a6f966c3bc3c208bcabf4680f11a5e
+=======
+    <list default="true" id="320c8787-2538-47ea-b767-71249a063e02" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-struuture/linked-list/LinkedList.php" beforeDir="false" afterPath="$PROJECT_DIR$/data-struuture/linked-list/LinkedList.php" afterDir="false" />
+>>>>>>> origin/master
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +29,7 @@
   <component name="FileEditorManager">
 <<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HTTP/HTTP首部/HTTP-HEAD.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -31,8 +38,32 @@
                 <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
               </first_editor>
               <second_editor />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data-struuture/linked-list/linked-list.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="264">
+                <caret line="12" selection-start-line="12" selection-end-line="12" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data-struuture/linked-list/LinkedList.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="352" column="25" lean-forward="true" selection-start-line="352" selection-start-column="25" selection-end-line="352" selection-end-column="25" />
+>>>>>>> origin/master
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data-struuture/linked-list/linked-1.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -74,6 +105,48 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission.md" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/UserControler.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/database/migrations/create_posts_table.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/PostController.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/MiddlewareModel.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/errors/list.blad.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/Post.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/index.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/create.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/show.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/edit.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/UserController.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/index.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/create.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/edit.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/PermissionController.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/index.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/create.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/edit.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/RoleController.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/index.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/create.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/edit.blade.php" />
+        <option value="$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/laravel-permission.md" />
+        <option value="$PROJECT_DIR$/data-struuture/linked-list/linked-list.md" />
+        <option value="$PROJECT_DIR$/data-struuture/linked-list/LinkedList.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="646" />
+    <option name="y" value="59" />
+    <option name="width" value="997" />
+    <option name="height" value="788" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -89,14 +162,22 @@
               <item name="get" type="462c0819:PsiDirectoryNode" />
             </path>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <path>
               <item name="get" type="b2602c69:ProjectViewProjectNode" />
               <item name="get" type="462c0819:PsiDirectoryNode" />
               <item name="HTTP" type="462c0819:PsiDirectoryNode" />
+=======
+            <path>
+              <item name="get" type="b2602c69:ProjectViewProjectNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
+              <item name="data-struuture" type="462c0819:PsiDirectoryNode" />
+>>>>>>> origin/master
             </path>
             <path>
               <item name="get" type="b2602c69:ProjectViewProjectNode" />
               <item name="get" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="HTTP" type="462c0819:PsiDirectoryNode" />
               <item name="HTTP状态码" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -113,6 +194,11 @@
             </path>
 =======
 >>>>>>> a1cb29c859a6f966c3bc3c208bcabf4680f11a5e
+=======
+              <item name="data-struuture" type="462c0819:PsiDirectoryNode" />
+              <item name="linked-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> origin/master
           </expand>
           <select />
         </subPane>
@@ -123,15 +209,30 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 =======
 >>>>>>> a1cb29c859a6f966c3bc3c208bcabf4680f11a5e
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data-struuture/linked-list" />
+>>>>>>> origin/master
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+<<<<<<< HEAD
+=======
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\WWW\get\data-struuture\linked-list" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\WWW\get\PHP\PHP-frame\laravel\laravel-persission" />
+    </key>
+>>>>>>> origin/master
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -145,11 +246,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="LinkedList.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/data-struuture/linked-list/LinkedList.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.LinkedList.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="24e5b780-ffb8-4e80-bf52-61335c639b04" name="Default Changelist" comment="" />
       <created>1565597467863</created>
       <option name="number" value="Default" />
@@ -168,30 +280,57 @@
 =======
       <workItem from="1565597470321" duration="672000" />
 >>>>>>> a1cb29c859a6f966c3bc3c208bcabf4680f11a5e
+=======
+      <changelist id="320c8787-2538-47ea-b767-71249a063e02" name="Default Changelist" comment="" />
+      <created>1565499132714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565499132714</updated>
+      <workItem from="1565499134339" duration="662000" />
+      <workItem from="1565878637815" duration="2920000" />
+      <workItem from="1566030972007" duration="8845000" />
+      <workItem from="1566096158747" duration="1068000" />
+      <workItem from="1567004857133" duration="3717000" />
+      <workItem from="1567090429045" duration="4334000" />
+      <workItem from="1567350198372" duration="3959000" />
+      <workItem from="1567523895261" duration="2640000" />
+>>>>>>> origin/master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="15521000" />
 =======
     <option name="totallyTimeSpent" value="1625000" />
 >>>>>>> a1cb29c859a6f966c3bc3c208bcabf4680f11a5e
+=======
+    <option name="totallyTimeSpent" value="28301000" />
+>>>>>>> origin/master
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10714286" />
 =======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08901919" />
 >>>>>>> a1cb29c859a6f966c3bc3c208bcabf4680f11a5e
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23298033" />
+>>>>>>> origin/master
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40394974" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7091562" />
+>>>>>>> origin/master
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -199,7 +338,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.59885055" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.5126437" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.45421904" />
+>>>>>>> origin/master
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -210,6 +353,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
 <<<<<<< HEAD
     <option name="TAB_STATES">
@@ -311,11 +455,206 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="339">
             <caret line="42" selection-start-line="42" selection-end-line="42" />
+=======
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/liyi.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesignPatterns/访问者/Visitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/Permission.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/Role.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/User.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/database/migration.php" />
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/database/migrations/create_posts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="19" column="11" lean-forward="true" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/MiddlewareModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="111" selection-end-column="1" />
+          <folding>
+            <element signature="n#MiddlewareModel#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="139" selection-end-column="1" />
+          <folding>
+            <element signature="n#PostController#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/errors/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#510#538#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/posts/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/model/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="158" column="5" lean-forward="true" selection-end-line="166" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+          <folding>
+            <element signature="e#1347#1373#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/users/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/PermissionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="168" selection-end-column="1" />
+          <folding>
+            <element signature="n#PermissionController#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/permissions/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding>
+            <element signature="e#980#1006#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/laravel-permission.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="325">
+            <caret line="1215" selection-end-line="1216" selection-end-column="68" />
+            <folding>
+              <element signature="e#7650#11946#0" />
+            </folding>
+>>>>>>> origin/master
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/HTTP/HTTP首部/http-1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -324,12 +663,63 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="504">
             <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+=======
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/view/roles/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/PHP-frame/laravel/laravel-permission/controller/RoleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="174" selection-end-column="1" />
+          <folding>
+            <element signature="n#RoleController#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-struuture/linked-list/linked-list.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="264">
+            <caret line="12" selection-start-line="12" selection-end-line="12" />
+>>>>>>> origin/master
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 =======
 >>>>>>> a1cb29c859a6f966c3bc3c208bcabf4680f11a5e
+=======
+    <entry file="file://$PROJECT_DIR$/data-struuture/linked-list/linked-1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-struuture/linked-list/LinkedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="352" column="25" lean-forward="true" selection-start-line="352" selection-start-column="25" selection-end-line="352" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> origin/master
   </component>
 </project>
