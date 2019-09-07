@@ -74,3 +74,32 @@ class HeadNode
     }
 }
 ```
+
+* 创建一个链表类，存放节点，`LinkedList`
+
+```php
+<?php
+
+class LinkedList
+{
+    
+}
+```
+
+* 创建一个初始化的方法，初始化一个单向链表的头结点
+
+```php
+<?php
+class LinkedList
+{
+    private $head;
+    
+    public function __construct() 
+    {
+        $this->head = new HeadNode(0, '', '');
+    }
+    
+}
+
+```
+
