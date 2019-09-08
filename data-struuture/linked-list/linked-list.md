@@ -392,3 +392,5 @@ $obj->del(2);
 $node = new HeadNode(1, '宋江jinag', '及时雨yu');
 $obj->update($node);
 ```
+
+* [整体实例](./LinkedList.php)
