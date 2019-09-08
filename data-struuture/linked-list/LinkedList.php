@@ -73,7 +73,7 @@ class LinkedList
 
         if ($flag) {
             //编号存在，不能添加
-            return sprintf("准备插入的编号已存在，不能插入：%d\n", $headNodel->no);
+            return printf("准备插入的编号已存在，不能插入待插入节点id：$headNodel->no\n");
         } else {
             //新添加节点的next域 = 把临时指针的next域指
             $headNodel->next = $temp->next;
@@ -329,12 +329,16 @@ $test4 = new HeadNodel(4, '林冲', '豹子头');
 $test5 = new HeadNodel(5, '武松', '打虎');
 
 $obj = new LinkedList();
-/*$obj->add($test1);
+$obj->add($test1);
 $obj->add($test2);
 $obj->add($test3);
 $obj->add($test4);
-$obj->add($test5);*/
+$obj->add($test5);
+$obj->getList();
 
+
+$obj->addByOrder($test1);
+$obj->addByOrder($test5);
 $obj->addByOrder($test1);
 $obj->addByOrder($test5);
 $obj->addByOrder($test3);
