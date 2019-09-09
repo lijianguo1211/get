@@ -41,7 +41,15 @@ class HeadNote
         $this->nickname = $nickname;
     }
 
-    public function __toString()
+    /**
+     * Notes: 以字符串输出
+     * Name: __toString
+     * User: LiYi
+     * Date: 2019/9/9
+     * Time: 23:28
+     * @return string
+     */
+/*    public function __toString()
     {
         // TODO: Implement __toString() method.
         return sprintf("编号是：%d,英雄是：%s,昵称是：%s\n",
@@ -50,5 +58,5 @@ class HeadNote
             $this->nickname
         //$this->next
         );
-    }
+    }*/
 }
