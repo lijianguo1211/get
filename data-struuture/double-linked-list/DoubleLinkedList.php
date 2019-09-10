@@ -36,6 +36,15 @@ class DoubleLinkedList
         $temp->next = $headNote;//临时节点的next指针指向待插入节点
     }
 
+    /**
+     * Notes:按顺序添加节点
+     * Name: addOrder
+     * User: LiYi
+     * Date: 2019/9/10
+     * Time: 22:51
+     * @param HeadNote $headNote
+     * @return mixed
+     */
     public function addOrder(HeadNote $headNote)
     {
         //临时指针，指向头结点
@@ -61,10 +70,11 @@ class DoubleLinkedList
             }
 
             //指针后移
+            $temp = $temp->next;
         }
 
         if ($flag) {
-            return print_r("添加的节点已存在");
+            return print_r("添加的节点已存在: $headNote->id\n");
         } else {
             if ($temp->next === null) {
                 $temp->next = $headNote;
@@ -73,6 +83,7 @@ class DoubleLinkedList
                 $temp->next->prev = $headNote;
                 $headNote->next = $temp->next;
                 $headNote->prev = $temp;
+                $temp->next = $headNote;
             }
         }
     }
@@ -180,7 +191,7 @@ class DoubleLinkedList
                 break;
             }
             //输出节点信息
-            var_dump($temp->prev);
+            printf($temp);
             //将指针temp后移
             $temp = $temp->next;
         }
@@ -216,4 +227,23 @@ $obj->list();
 echo "\n";
 $test6 = new HeadNote(2, '王二', '王二麻子');
 $obj->update($test6);
+$obj->list();
+
+$test1 = new HeadNote(1, 'liyi', 'yiyiy');
+$test2 = new HeadNote(3, 'haha', 'hahaha');
+$test3 = new HeadNote(2, 'haha', 'hahaha');
+$test4 = new HeadNote(4, 'haha', 'hahaha');
+$test5 = new HeadNote(5, 'liyi', 'yiyiy');
+$test6 = new HeadNote(6, '王二', '王二麻子');
+echo "\n";
+$obj->addOrder($test6);
+$obj->addOrder($test1);
+$obj->addOrder($test2);
+$obj->addOrder($test5);
+$obj->addOrder($test3);
+$obj->addOrder($test4);
+
+
+$obj->addOrder($test6);
+
 $obj->list();
