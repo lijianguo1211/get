@@ -219,6 +219,22 @@ class LinkedList
         return $cur;
     }
 
+    public function deleteLastIndexNode(int $index)
+    {
+        //链表长度
+        $size = $this->getLengthLinked();
+        $temp = $this->head;
+
+        $size -= $index;
+
+        while ($size > 0) {
+            $size--;
+            $temp = $temp->next;
+        }
+        $temp->next = $temp->next->next;
+    }
+
+
     //反转单链表 思路
     //1.定义一个新的链表 reverseHead = new HeroHead();
     //2.从头遍历原来的链表，美遍历一个节点，将其取出，并放在新的链表的最前端
@@ -334,7 +350,14 @@ $obj->add($test2);
 $obj->add($test3);
 $obj->add($test4);
 $obj->add($test5);
+
+echo "删除倒数某个节点前 . \n";
 $obj->getList();
+
+$obj->deleteLastIndexNode(2);
+echo "删除倒数某个节点后 . \n";
+$obj->getList();
+echo "#### . \n";
 
 
 $obj->addByOrder($test1);
