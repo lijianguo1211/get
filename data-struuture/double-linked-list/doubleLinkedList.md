@@ -293,4 +293,4 @@ $obj->update($test6);
 $obj->list();
 ```
 
-[github地址，以及示例代码]()
+[github地址，以及示例代码](https://github.com/lijianguo1211/get/blob/master/data-struuture/double-linked-list/DoubleLinkedList.php)

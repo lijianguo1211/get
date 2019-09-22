@@ -13,6 +13,14 @@ class DoubleLinkedList
         $this->head = new HeadNote(0 ,'', '');
     }
 
+    /**
+     * Notes:添加节点到最后
+     * Function Name: add
+     * User: Jay.Li
+     * Date: 2019\9\10 0010
+     * Time: 9:12
+     * @param HeadNote $headNote
+     */
     public function add(HeadNote $headNote)
     {
         //辅助指针，初始话指向头节点
@@ -28,6 +36,67 @@ class DoubleLinkedList
         $temp->next = $headNote;//临时节点的next指针指向待插入节点
     }
 
+    /**
+     * Notes:按顺序添加节点
+     * Name: addOrder
+     * User: LiYi
+     * Date: 2019/9/10
+     * Time: 22:51
+     * @param HeadNote $headNote
+     * @return mixed
+     */
+    public function addOrder(HeadNote $headNote)
+    {
+        //临时指针，指向头结点
+        $temp = $this->head;
+        //flag，状态判断值，默认是false
+        $flag = false;
+
+        //while 循环遍历数据
+        while (true) {
+            //如果当前指针的下一个节点为null。代表链表循环结束，退出循环
+            if ($temp->next === null) {
+                break;
+            }
+
+            /**
+             * 添加的节点已存在
+             */
+            if ($temp->next->id === $headNote->id) {
+                $flag = true;
+                break;
+            } elseif ($temp->next->id > $headNote->id) {
+                break;//要添加的节点ID小于临时指针的下一个节点，所以可以添加在临时指针和临时指针的下一个节点之间
+            }
+
+            //指针后移
+            $temp = $temp->next;
+        }
+
+        if ($flag) {
+            return print_r("添加的节点已存在: $headNote->id\n");
+        } else {
+            if ($temp->next === null) {
+                $temp->next = $headNote;
+                $headNote->prev = $temp;
+            } else {
+                $temp->next->prev = $headNote;
+                $headNote->next = $temp->next;
+                $headNote->prev = $temp;
+                $temp->next = $headNote;
+            }
+        }
+    }
+
+    /**
+     * Notes:修改节点数据
+     * Function Name: update
+     * User: Jay.Li
+     * Date: 2019\9\10 0010
+     * Time: 9:12
+     * @param HeadNote $headNote
+     * @return mixed | boolean
+     */
     public function update(HeadNote $headNote)
     {
         $temp = $this->head->next;
@@ -52,8 +121,18 @@ class DoubleLinkedList
         } else {
             return print_r('待修改节点不存在');
         }
+        return true;
     }
 
+    /**
+     * Notes:删除节点
+     * Function Name: del
+     * User: Jay.Li
+     * Date: 2019\9\10 0010
+     * Time: 9:13
+     * @param int $id
+     * @return int | bool
+     */
     public function del(int $id)
     {
         //临时指针，初始指向头节点的下一个节点
@@ -87,8 +166,17 @@ class DoubleLinkedList
         } else {
             return printf("链表中不存在节点ID为：$id 的节点");
         }
+        return true;
     }
 
+    /**
+     * Notes:打印节点数据
+     * Function Name: list
+     * User: Jay.Li
+     * Date: 2019\9\10 0010
+     * Time: 9:14
+     * @return int|void
+     */
     public function list()
     {
         // 判断链表是否为空
@@ -103,10 +191,11 @@ class DoubleLinkedList
                 break;
             }
             //输出节点信息
-            var_dump($temp->prev);
+            printf($temp);
             //将指针temp后移
             $temp = $temp->next;
         }
+        return ;
     }
 }
 
@@ -138,4 +227,23 @@ $obj->list();
 echo "\n";
 $test6 = new HeadNote(2, '王二', '王二麻子');
 $obj->update($test6);
+$obj->list();
+
+$test1 = new HeadNote(1, 'liyi', 'yiyiy');
+$test2 = new HeadNote(3, 'haha', 'hahaha');
+$test3 = new HeadNote(2, 'haha', 'hahaha');
+$test4 = new HeadNote(4, 'haha', 'hahaha');
+$test5 = new HeadNote(5, 'liyi', 'yiyiy');
+$test6 = new HeadNote(6, '王二', '王二麻子');
+echo "\n";
+$obj->addOrder($test6);
+$obj->addOrder($test1);
+$obj->addOrder($test2);
+$obj->addOrder($test5);
+$obj->addOrder($test3);
+$obj->addOrder($test4);
+
+
+$obj->addOrder($test6);
+
 $obj->list();
