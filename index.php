@@ -19,3 +19,7 @@ $j = $i++;
 echo $i . "\n";
 
 echo $j;
+
+$arr = [];
+
+var_dump($arr[1]);
