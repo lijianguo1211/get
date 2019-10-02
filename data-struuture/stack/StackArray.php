@@ -53,7 +53,7 @@ class StackArray
 
     public function getList()
     {
-        for ($i = $this->maxSize - 1; $i > $this->top; $i--) {
+        for ($i = $this->maxSize-1; $i > $this->top; $i--) {
            echo sprintf("stack[%d] = %d", $this->top, $this->stack[$i]);
         }
     }
@@ -65,7 +65,7 @@ class StackArray
      * Time: 9:48
      * @return bool
      */
-    public function isEmpty()
+    public function isEmpty():bool
     {
         return $this->top === -1;
     }
@@ -77,7 +77,7 @@ class StackArray
      * Time: 9:42
      * @return bool
      */
-    public function isFull()
+    public function isFull():bool
     {
         return count($this->stack) === $this->maxSize;
     }
@@ -100,71 +100,4 @@ try {
     var_dump($obj->pop());
 } catch (\Exception $e) {
     var_dump($e->getMessage());
-}
-
-$arr = [
-    "product_blog" => [
-        "new_1" => [
-            "child_0" => [
-                "one_catalog" => "dsfgsdfg",
-                "post_catalog" => "dsfgsdf",
-                "product_or_post" => null,
-                "_remove_" => "0"
-            ]
-        ],
-        "new_2" => [
-            "child_0" => [
-                "one_catalog" => "sdfgdsfgsdfg",
-                "post_catalog" => "dsfgdsf",
-                "product_or_post" => "600",
-                "_remove_" => "0",
-            ]
-        ],
-        "new_4" => [
-            "child_0" => [
-                "one_catalog" => "sdfgsdfg",
-                "post_catalog" => "dsfgdsfg",
-                "product_or_post" => "600",
-                "_remove_" => "0",
-            ],
-            "child_1" => [
-                "post_catalog" => "sdfgsdfg",
-                "product_or_post" => "508",
-            ]
-        ],
-        "new_5" => [
-            "child_0" => [
-                "one_catalog" => "sdfg",
-                "post_catalog" => "dsfgdsfg",
-                "product_or_post" => "508",
-                "_remove_" => "0",
-            ],
-            "child_2" => [
-                "post_catalog" => "dsfg",
-                "product_or_post" => "744",
-            ]
-        ]
-    ]
-];
-
-$arr = [
-    array (
-        'one_catalog' => 'asdfasdf',
-        'post_catalog' => 'sdfsdfsdgsdfg',
-        'product_or_post' => '486',
-        '_remove_' => '0',
-        'child_1' =>
-            array (
-                'post_catalog' => 'asfas',
-                'product_or_post' => '508',
-            ),
-    )
-];
-
-foreach ($arr as $k => $v) {
-    foreach ($v as $kk => $vv) {
-        if (is_array($vv)) {
-            var_dump($vv);
-        }
-    }
 }
