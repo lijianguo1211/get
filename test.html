@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="{{.cont}}">
+    <title>websocket</title>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            padding: 20px;
+            background: #ffe0c5;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .mast{
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -999;
+        }
+        button{
+            padding: 10px!important;
+            border-radius: 5px;
+            border: none;
+            background: rgba(3, 128, 255, 0.8);
+            color: white;
+        }
+        #text{
+            resize: none;
+            width: 100%;
+            border: none;
+            letter-spacing: 2px;
+            line-height: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="mast main">
+    <div class="content">
+        <button onclick="init()">Connect</button>
+        <span style="padding: 0 15px"></span>
+        <button id="close" style="background: #888888">Close</button>
+        <div style="margin-top: 20px">
+            <textarea id="text" cols="30" rows="20" readonly></textarea>
+        </div>
+        <div style="margin-top: 20px">
+            <input id="cont" style="padding: 5px 2px;width: 100%;border: none"/>
+            <button id="send"style="width: 100%;margin-top: 15px">Send Massage</button>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var flag = false,state = false,txt = ""
+
+    function makeName(n) {
+        return Math.random().toString(36).substr(2).slice(0,n)
+    }
+
+    function msg(e) {
+        if (!flag) {
+            alert("not connect!")
+        }
+        if (e.data.indexOf("heart_tzq") != -1) {
+            return;
+        }
+        txt = document.createTextNode(e.data + "\r\n")
+        document.getElementById("text").appendChild(txt)
+        document.getElementById("text").scrollTop = document.getElementById("text").scrollHeight
+    }
+    function close() {
+        flag = false
+        state = false
+        txt = document.createTextNode("closed\r\n")
+        document.getElementById("text").appendChild(txt)
+    }
+
+    function init() {
+        if (state) {
+            alert("already connected!");
+            return;
+        }
+        flag = false
+        let ws = new WebSocket("ws://118.25.19.106:9501/ws");
+        ws.onopen = function(){
+            ws.send("come in")
+            flag = true
+            state = true
+        }
+        ws.onmessage = msg
+        ws.onclose = close
+        document.getElementById("send").addEventListener("click",function () {
+            if (!flag) {
+                alert("not connect!")
+                return
+            }
+            let msg = document.getElementById("cont").value
+            if (msg == "") {
+                alert("msg is null")
+                return
+            }
+            ws.send(msg)
+            document.getElementById("cont").value = ""
+        })
+        document.getElementById("close").addEventListener("click",function () {
+            if (flag) {
+                ws.close(3000, "user closed")
+                flag = true
+                state = false
+            } else {
+                return;
+            }
+        })
+    }
+</script>
+</html>

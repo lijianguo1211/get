@@ -7,3 +7,6 @@
 * PHP_music命令行项目
 
 [music.php](https://github.com/maicong/music/blob/master/core/music.php)
+
+
+* [laravel](https://github.com/laravel/laravel) composer地址 [composer create-project laravel/laravel]
