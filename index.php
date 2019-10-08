@@ -17,3 +17,5 @@ $i = 1;
 $j = $i++;
 
 echo $i . "\n";
+
+strtolower('');
