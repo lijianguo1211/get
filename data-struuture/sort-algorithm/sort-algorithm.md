@@ -244,4 +244,148 @@ $arr = [-5, -3, 1, 20, 6]; // 20,6 => $arr = [-5, -3, 1, 6, 20];
 $arr = [-5, -3, 1, 6, 20];
 ```
 
+以上呢就是相当于拿两组一个一个比较，就是有n个数，那么它就要比较除了它自身的（n-1）次，这个就最容易理解的
 
+*****************************
+
+下面是一个改良版的，稍微复杂一点点。
+
+* 得到一个无序的数组，求得数组元素的个数
+
+* 第一轮循环
+
+```php
+//第一次比较是拿数组的第一个元素和数组的第二个元素作比较
+$data =  [1, 20, -3, -5, 6];
+
+$data =  [1, 20, -3, -5, 6];
+$count = count($data);
+$temp = 0;
+for ($j = 0; $j < $count-1; $j++) {
+    if ($data[$j] > $data[$j+1]) {
+        $temp = $data[$j];
+        $data[$j] = $data[$j+1];
+        $data[$j+1] = $temp;
+    }
+}
+
+//第一次： 1 和 20 比较，判断前面元素和后面元素谁打，后面大交换位置，前面大不交换位置
+
+//第二次： 20 和 -3 比较， 20 > -3 交换位置 得到 1 -3 20 -5 6
+
+//第三次：20 和 -5 比较， 20 > -5 交换位置 得到 1 -3 -5 20 6
+
+//第四次：20 和 6 比较， 20 > 6 交换位置 得到 1 -3 -5 6 20
+``` 
+
+第一轮循环结束之后，得到的排序结果就是 ``[1, -3, -5, 6, 20]``,第一轮循环结束之后，我们得到了一个最大的元素，并且经过交换位置，把它移动到了
+最后一个位置，那么再经过第二次循环的时候，我们就可以少比较一个，也就是每轮循环结束以后，我们就可以少比较一个
+
+* 第二轮循环
+
+```php
+$data =  [1, 20, -3, -5, 6];
+
+$data =  [1, 20, -3, -5, 6];
+$count = count($data);
+$temp = 0;
+//不比较最后一个最大的元素了
+for ($j = 0; $j < $count-1-1; $j++) {
+    if ($data[$j] > $data[$j+1]) {
+        $temp = $data[$j];
+        $data[$j] = $data[$j+1];
+        $data[$j+1] = $temp;
+    }
+}
+
+//第一次：1 和 -3 比较 ，1 > -3 交换位置 -3 1 -5 6 20
+//第二次：1 和 -5 比较 ，1 > -5 交换位置 -3 -5 1 6 20
+//第三次：1 和 6 比较 ，1 < 6 不交换位置 -3 -5 1 6 20
+
+```
+
+第二轮结束以后得到的结果就是 ``[-3, -5, 1, 6, 20]``
+
+依次类推，每次比较完成后减去一个相对最大值，最后得到一个排序完成的数组。
+
+完整代码如下：
+
+```php
+<?php
+/**
+ * Notes:
+ * File name:${fILE_NAME}
+ * Create by: Jay.Li
+ * Created on: 2019/10/18 0018 9:22
+ */
+
+class Sort
+{
+    public static function sortArray(array $data)
+    {
+        if (!is_array($data)) {
+            return ['message' => '非数组'];
+        }
+
+        $count = count($data);
+
+        if ($count <= 0) {
+            return ['message' => '数组长度小于等于0'];
+        }
+
+        if ($count === 1) {
+            return $data;
+        }
+
+        return static::sortArray2($data, $count);
+    }
+
+    public static function sortArray1(array $data, int $count):array
+    {
+        for ($i = 0; $i < $count; $i++) {
+            $flag = false;
+            $temp = 0;
+            for ($j = $i+1; $j < $count; $j++) {
+                if ($data[$i] > $data[$j]) {
+                    $temp = $data[$i];
+                    $data[$i] = $data[$j];
+                    $data[$j] = $temp;
+                    $flag = true;
+                }
+            }
+
+            if (!$flag) {
+                break;
+            }
+        }
+
+        return $data;
+    }
+
+    public static function sortArray2(array $data, int $count):array
+    {
+        $temp = 0;
+        for ($i = 0; $i < $count; $i++) {
+            $flag = false;
+            for ($j = 0; $j < $count-1-$i; $j++) {
+                if ($data[$j] > $data[$j+1]) {
+                    $temp = $data[$j];
+                    $data[$j] = $data[$j+1];
+                    $data[$j+1] = $temp;
+                    $flag = true;
+                }
+            }
+
+            if (!$flag) {
+                break;
+            }
+        }
+        return $data;
+
+    }
+}
+$data =  [1, 20, -3, -5, 6];
+
+var_dump(Sort::sortArray($data));
+
+```
