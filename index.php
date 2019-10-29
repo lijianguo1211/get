@@ -18,4 +18,15 @@ $j = $i++;
 
 echo $i . "\n";
 
+<<<<<<< HEAD
+echo $j;
+
+$arr = [];
+
+var_dump($arr[1]);
+
+
+//* * * * * cd //data/apps/lijianguo && php artisan schedule:run >> /dev/null 2>&1
+=======
 strtolower('');
+>>>>>>> b75cccbc229bf925b523492dd31af0cbd3ed845b
