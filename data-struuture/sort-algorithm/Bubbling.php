@@ -29,19 +29,19 @@ class Sort
 
     public static function sortArray1(array $data, int $count):array
     {
-        for ($i = 0; $i < $count; $i++) {
-            $flag = false;
+        for ($i = 0; $i < $count - 1; $i++) {
+            $flag = false;//每趟排序开始，使flag的值初始为 false
             $temp = 0;
             for ($j = $i+1; $j < $count; $j++) {
                 if ($data[$i] > $data[$j]) {
                     $temp = $data[$i];
                     $data[$i] = $data[$j];
                     $data[$j] = $temp;
-                    $flag = true;
+                    $flag = true;//发生交换，即把 flag 设置为 true
                 }
             }
 
-            if (!$flag) {
+            if (!$flag) {//在一趟排序中，一次交换都没有发生过
                 break;
             }
         }
@@ -52,7 +52,7 @@ class Sort
     public static function sortArray2(array $data, int $count):array
     {
         $temp = 0;
-        for ($i = 0; $i < $count; $i++) {
+        for ($i = 0; $i < $count - 1; $i++) {
             $flag = false;
             for ($j = 0; $j < $count-1-$i; $j++) {
                 if ($data[$j] > $data[$j+1]) {
