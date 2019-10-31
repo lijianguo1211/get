@@ -61,7 +61,7 @@ class SelectSort
             return $arr;
         }
 
-        for ($i = 0; $i < $count; $i++) {
+        for ($i = 0; $i < $count - 1; $i++) {
             $minIndex = $i;
             $min = $arr[$i];
             for ($j = $i + 1; $j < $count; $j++) {
