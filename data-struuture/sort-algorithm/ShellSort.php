@@ -68,6 +68,30 @@ class ShellSort
 
         var_dump($data);
     }
+
+    public static function ShellSortMoveArray(array $data)
+    {
+        $count = count($data);
+        for ($gap = $count / 2; $gap >= 1; $gap /= 2) {
+            $gap = floor($gap);
+            for ($i = $gap; $i < $count; $i++) {
+                $insertIndex = $i;
+                $insertValue = $data[$insertIndex];
+
+                if ($data[$insertIndex] < $data[$insertIndex - $gap]) {
+                    while ($insertIndex - $gap > 0 && $insertValue < $data[$insertIndex - $gap]) {
+                        $data[$insertIndex] = $data[$insertIndex - $gap];
+                        $insertIndex -= $gap;
+                    }
+
+                    $data[$insertIndex] = $insertValue;
+                }
+            }
+
+        }
+        return $data;
+    }
+
 }
 
-var_dump(ShellSort::shellSortArray([9,6,1,3,0,5,7,2,8,4]));
+var_dump(ShellSort::ShellSortMoveArray([9,6,1,3,0,5,7,2,8,4]));
