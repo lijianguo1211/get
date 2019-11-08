@@ -148,3 +148,204 @@ $user = User::where('id', $id)->select('id', 'name', 'email')
 ```
 
 建议就是：如果没有别的条件限制，那就使用第二种，如果有条件限制那就使用闭包的查询方法
+
+*****************************************************
+
+### 一对一关联模型 `hasOne()`
+
+* 源码文件 `vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasRelationships.php`
+
+```php
+<?php
+
+trait HasRelationships
+{
+        // 参数一：待关联的模型
+        // 参数一：当前模型的外键，
+        // 参数一：当前模型的主键
+        public function hasOne($related, $foreignKey = null, $localKey = null)
+        {
+            //创建一个新的模型实例
+            $instance = $this->newRelatedInstance($related);
+    
+            //当前模型的外键
+            $foreignKey = $foreignKey ?: $this->getForeignKey();
+            
+            //当前模型的主键
+            $localKey = $localKey ?: $this->getKeyName();
+    
+            return $this->newHasOne($instance->newQuery(), $this, $instance->getTable().'.'.$foreignKey, $localKey);
+        }
+
+        protected function newHasOne(Builder $query, Model $parent, $foreignKey, $localKey)
+        {
+            return new HasOne($query, $parent, $foreignKey, $localKey);
+        }
+
+}
+```
+
+* `HasOne` 类的源文件 `vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOne.php`
+
+```php
+<?php
+
+class HasOne extends HasOneOrMany
+{
+
+}
+
+```
+
+* `HasOneOrMany` 类的源文件 `vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php`
+
+```php
+<?php
+
+abstract class HasOneOrMany extends Relation
+{
+    public function __construct(Builder $query, Model $parent, $foreignKey, $localKey)
+    {
+        $this->localKey = $localKey;
+        $this->foreignKey = $foreignKey;
+
+        parent::__construct($query, $parent);
+    }
+}
+```
+
+
+### 一对一关联模型 `belongsTo()`
+
+* 源码文件 `vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasRelationships.php`
+
+对应的函数：
+
+```php
+<?php
+trait HasRelationships
+{
+    /**
+    * $related 关联模型
+    * $foreignKey 当前模型的外键
+    * $ownerKey 当前模型的主键
+    * $relation 当前模型
+    */
+    public function belongsTo($related, $foreignKey = null, $ownerKey = null, $relation = null)
+    {
+        //判断第四个参数是否为null, 如果为null,默认得到就是当前关联方法的方法名
+        if (is_null($relation)) {
+            $relation = $this->guessBelongsToRelation();
+        }
+        
+        // 得到当前关联模型的对象
+        $instance = $this->newRelatedInstance($related);
+    
+        // 判断外键是否为空，如果为空，就拿当前关联方法的名拼接上待关联模型的主键id
+        if (is_null($foreignKey)) {
+            $foreignKey = Str::snake($relation).'_'.$instance->getKeyName();
+        }
+    
+        //判断是否传递了待关联模型的主键，没有，就直接读取当前待关联的模型的主键
+        $ownerKey = $ownerKey ?: $instance->getKeyName();
+    
+        return $this->newBelongsTo(
+            $instance->newQuery(), $this, $foreignKey, $ownerKey, $relation
+        );
+    }
+    
+    protected function guessBelongsToRelation()
+    {
+        // debug_backtrace 产生一条回溯跟踪(backtrace),最后得到当前调用的方法名，也就是定义这个关联关系的方法名
+        [$one, $two, $caller] = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 3);
+        /*
+        *array:3 [▼
+           0 => array:5 [▼
+             "file" => "E:\work\project\laravel-blog\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasRelationships.php"
+             "line" => 176
+             "function" => "guessBelongsToRelation"
+             "class" => "Illuminate\Database\Eloquent\Model"
+             "type" => "->"
+           ]
+           1 => array:5 [▼
+             "file" => "E:\work\project\laravel-blog\app\Models\PostDetail.php"
+             "line" => 88
+             "function" => "belongsTo"
+             "class" => "Illuminate\Database\Eloquent\Model"
+             "type" => "->"
+           ]
+           2 => array:5 [▼
+             "file" => "E:\work\project\laravel-blog\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php"
+             "line" => 586
+             "function" => "post"
+             "class" => "App\Models\PostDetail"
+             "type" => "->"
+           ]
+         ]
+        */
+        return $caller['function'];
+    }
+    
+    /**
+    * 得到待关联模型
+    * 得到当前模型
+    * 当前待关联模型的外键
+    * 当前待关联模型的主键
+    * 当前定义的关联方法
+    */
+    protected function newBelongsTo(Builder $query, Model $child, $foreignKey, $ownerKey, $relation)
+    {
+        return new BelongsTo($query, $child, $foreignKey, $ownerKey, $relation);
+    }
+}
+
+```
+
+* `BelongsTo` 对应的源码文件 `vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\BelongsTo.php`
+
+```php
+<?php
+
+class BelongsTo extends Relation
+{
+    public function __construct(Builder $query, Model $child, $foreignKey, $ownerKey, $relationName)
+    {
+        $this->ownerKey = $ownerKey;
+        $this->relationName = $relationName;
+        $this->foreignKey = $foreignKey;
+       
+        $this->child = $child;
+
+        parent::__construct($query, $child);
+    }
+    
+    //继承自 Relation 覆盖重写
+    public function addConstraints()
+    {
+        if (static::$constraints) {
+            
+            //$this->related 就是待关联的模型的表名
+            $table = $this->related->getTable();
+    
+            $this->query->where($table.'.'.$this->ownerKey, '=', $this->child->{$this->foreignKey});
+        }
+    }
+}
+
+//继承父类
+
+abstract class Relation
+{
+    public function __construct(Builder $query, Model $parent)
+    {
+        $this->query = $query;
+        $this->parent = $parent;
+        $this->related = $query->getModel();
+
+        $this->addConstraints();
+    }
+}
+
+//执行方法 addConstraints 被 BelongsTo 类继承覆盖
+```
+
