@@ -48,27 +48,27 @@ class ShellSort
         return [$data, $count];
     }
 
-    public static function shellSortMoveArray(array $data)
+    public static function ShellSortMoveArray(array $data)
     {
         $count = count($data);
-        for ($gap = $count / 2; $gap >=1; $gap /= 2) {
+        for ($gap = $count / 2; $gap >= 1; $gap /= 2) {
             $gap = floor($gap);
-            echo "*****" . PHP_EOL;
             for ($i = $gap; $i < $count; $i++) {
-                //待插入数前面的数的索引
                 $insertIndex = $i;
-                //带插入的元素
                 $insertValue = $data[$insertIndex];
-                /*if ($insertValue ) {*/
-                    while ($insertIndex - $gap >= 0 && $insertValue < $data[$insertIndex - $gap]) {
+                echo "insertIndex=$insertIndex" . PHP_EOL;
+                echo "insertValue=$insertValue" . PHP_EOL;
+                if ($data[$insertIndex] < $data[$insertIndex - $gap]) {
+                    while ($insertIndex - $gap > 0 && $insertValue < $data[$insertIndex - $gap]) {
                         $data[$insertIndex] = $data[$insertIndex - $gap];
                         $insertIndex -= $gap;
-                }
-                $data[$insertIndex - $gap] = $insertValue;
-                /*}*/
-            }
-        }
+                    }
 
+                    $data[$insertIndex] = $insertValue;
+                }
+            }
+
+        }
         return $data;
     }
 
@@ -109,5 +109,4 @@ class ShellSort
         var_dump($data);
     }
 }
-
 var_dump(ShellSort::shellSortMoveArray([9,6,1,3,0,5,7,2,8,4]));
