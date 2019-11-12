@@ -18,8 +18,6 @@ public function listen(Closure $callback)
 
 ```php
 <?php
-
-<?php
 /**
  * Notes:
  * File name:DataBaseServe
@@ -124,3 +122,51 @@ $this->databaseServe::connection()->listen(function($query) {
             fclose($logFile);
         });
 ```
+
+* 使用`Laravel 的 Illuminate\Database\Capsule\Manager`类也就是在`Laravel里面的DB类`
+
+```php
+DB::connection()->enableQueryLog();
+
+User::where('id', 12)->get();
+
+dd(DB::getQueryLog());
+
+```
+
+* 使用`Laravel数据库的toSql()方法`,这个方法输出的是绑定前的数据，
+
+```php
+User::orderByDesc('id')->where('id', '<', 12)->toSql();
+
+// select * from users where id < ? order by id desc
+```
+
+* 输出完整的SQL语句
+
+```php
+$query = User::orderByDesc('id')->where('id', '<', 12);
+
+$sql = str_replace_array('?', $query->getBindings(), $query->toSql());
+
+//输出
+select * from users where id < 12 order by id desc;
+```
+
+* 自定义一个 'macroable' 带有获取绑定数据的 SQL 查询替换 toSql
+
+```php
+\Illuminate\Database\Query\Builder::macro('toRawSql', function(){
+    return array_reduce($this->getBindings(), function($sql, $binding){
+        return preg_replace('/\?/', is_numeric($binding) ? $binding : "'".$binding."'" , $sql, 1);
+    }, $this->toSql());
+});
+
+\Illuminate\Database\Eloquent\Builder::macro('toRawSql', function(){
+    return ($this->getQuery()->toRawSql());
+});
+```
+
+统一添加在 `AppServiceProvider boot()`方法中，然后就可以直接调用了 
+
+>ps 对`laravel`版本有要求，低版本的还是使用不了最下面的这个方法
