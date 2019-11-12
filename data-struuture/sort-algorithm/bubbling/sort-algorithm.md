@@ -201,7 +201,7 @@ for ($i = 0; $i < 100; $i++) {
 
 #### 排序实现
 
-* 冒泡排序 [Bubbling](./Bubbling.php)
+* 冒泡排序 [Bubbling](Bubbling.php)
 
 1. 定义一个随机的待排序的 int 类型的数组
 
