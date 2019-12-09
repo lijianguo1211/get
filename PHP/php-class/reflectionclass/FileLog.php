@@ -1,5 +1,10 @@
 <?php
 
+interface FileLogInterface
+{
+    public function test();
+}
+
 /**
  * Notes:
  * User: LiYi
@@ -7,8 +12,13 @@
  * Time: 23:19
  * Class FileLog
  */
-class FileLog
+class FileLog implements FileLogInterface
 {
+    public function test()
+    {
+        // TODO: Implement test() method.
+    }
+
     /**
      * FileLog constructor.
      */
