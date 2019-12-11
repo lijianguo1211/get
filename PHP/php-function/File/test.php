@@ -68,3 +68,26 @@ var_dump($obj->file('./file.pptx') . ' <==> pptx');
 var_dump($obj->file('./file.rar') . ' <==> rar');
 var_dump($obj->file('./file.rtf') . ' <==> rtf');
 var_dump($obj->file('./file.zip') . ' <==> zip');
+
+$a = '';
+
+$b = null;
+
+if (isset($a)) {
+    echo 123;
+} else {
+    echo 789;
+}
+
+if (isset($b)) {
+    echo 456;
+} else {
+    echo 654;
+}
+
+$str = '123qwert123987poiuyjkk123';
+
+//preg_match_all('/[^[:alpha:]]/', $str, $matches1);
+preg_match_all('/[^[:alnum:]]/', $str, $matches);
+
+var_dump($matches);
