@@ -10,6 +10,9 @@
     ],
   "require": {
     "ext-fileinfo": "*",
-      "imangazaliev/didom": "^1.14"
+      "imangazaliev/didom": "^1.14",
+    "ext-zip": "*",
+      "chumper/zipper": "^1.0",
+    "ext-curl": "*"
   }
 }

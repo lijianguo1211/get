@@ -1,5 +1,5 @@
 .env
 /.idea/*
 /composer/guzzleHttp/vendor
-.vendor
+./vendor
 
