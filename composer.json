@@ -13,6 +13,7 @@
       "imangazaliev/didom": "^1.14",
     "ext-zip": "*",
       "chumper/zipper": "^1.0",
-    "ext-curl": "*"
+    "ext-curl": "*",
+    "ext-ftp": "*"
   }
 }
