@@ -1,0 +1,15 @@
+{
+    "name": "test-namespace/liyi",
+    "authors": [
+        {
+            "name": "lijianguo1211",
+            "email": "risesli@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    }
+}
