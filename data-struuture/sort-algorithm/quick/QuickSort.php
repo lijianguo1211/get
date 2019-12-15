@@ -11,61 +11,63 @@ class QuickSort
 {
     public static function quickSortArray(array $data, int $left, int $right)
     {
-        $lIndex = $left;
-        $rIndex = $right;
+        $leftIndex = $left;
+        $rightIndex = $right;
 
         //中轴值 pivot
-        $pivot = floor($data[($left + $right) / 2]);
+
+        $pivot = intval($data[($left + $right) / 2]);
         echo implode(',', $data) . PHP_EOL;
-        echo 'lindex => ' . $lIndex . '  rindex => ' . $rIndex . ' pivot => ' . $pivot .PHP_EOL;
+        echo 'lindex => ' . $leftIndex . '  rindex => ' . $rightIndex . ' pivot => ' . $pivot .PHP_EOL;
+
         //while 循环，比pivot值小的放在左边，比pivot大的值放在右边
-        while ($lIndex < $rIndex) {
+        while ($leftIndex < $rightIndex) {
 
             //从pivot的左边开始找，直到找到大于pivot的值退出
-            while ($data[$lIndex] < $pivot) {
-                $lIndex += 1;
+            while ($data[$leftIndex] < $pivot) {
+                $leftIndex++;
             }
 
             //从pivot的右边开始找，直到小于pivot的值才退出
-            while ($data[$rIndex] > $pivot) {
-                $rIndex -= 1;
+            while ($data[$rightIndex] > $pivot) {
+                $rightIndex--;
             }
 
             //如果 lIndex >= rIndex 说明pivot的左右两边的值，已经按照左边全部是小于pivot的值，
             //右边大于pivot的值
-            if ($lIndex >= $rIndex) {
+            if ($leftIndex >= $rightIndex) {
                 break;
             }
 
             //交换
-            $temp = $data[$lIndex];
-            $data[$lIndex] = $data[$rIndex];
-            $data[$rIndex] = $temp;
+            $temp = $data[$leftIndex];
+            $data[$leftIndex] = $data[$rightIndex];
+            $data[$rightIndex] = $temp;
 
             //交换之后，发现$data[$lIndex] == $pivot 前移
-            if ($data[$lIndex] == $pivot) {
-                $rIndex -= 1;
+            if ($data[$leftIndex] == $pivot) {
+                $rightIndex -= 1;
             }
 
-            if ($data[$rIndex] == $pivot) {
-                $lIndex += 1;
+            if ($data[$rightIndex] == $pivot) {
+                $leftIndex += 1;
             }
         }
 
-        if ($lIndex == $rIndex) {
-            $lIndex += 1;
-            $rIndex -= 1;
-        }
 
-
-        if ($left < $rIndex) {
-            static::quickSortArray($data, $left, $rIndex);
-        }
-
-        if ($right > $lIndex) {
-            static::quickSortArray($data, $lIndex, $right);
-        }
-
+//        if ($leftIndex == $rightIndex) {
+//            $leftIndex += 1;
+//            $rightIndex -= 1;
+//        }
+//
+//        if ($left < $rightIndex) {
+//            static::quickSortArray($data, $left, $rightIndex);
+//        }
+//
+//        if ($right > $leftIndex) {
+//            static::quickSortArray($data, $leftIndex, $right);
+//        }
+        return $data;
     }
 }
 
@@ -77,6 +79,7 @@ $count = count($data);
 $left = 0;
 
 $right = $count-1;
+
 
 //var_dump(QuickSort::quickSortArray($data, $left, $right));
 
@@ -132,3 +135,5 @@ var_dump(quickArray($data));
 //lindex => 7  rindex => 10 pivot => 74
 //5,5,0,3,32,8,60,69,69,74,99,109
 //lindex => 7  rindex => 8 pivot => 69
+echo implode(',', QuickSort::quickSortArray($data, $left, $right));
+

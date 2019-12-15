@@ -7,5 +7,13 @@
         {            "name": "author's name",
             "email": "email@example.com"
         }
-    ]
+    ],
+  "require": {
+    "ext-fileinfo": "*",
+      "imangazaliev/didom": "^1.14",
+    "ext-zip": "*",
+      "chumper/zipper": "^1.0",
+    "ext-curl": "*",
+    "ext-ftp": "*"
+  }
 }
