@@ -82,7 +82,7 @@ Range: bytes=5001 //5001以后的所有
 Range: bytes=-3000, 5000-7000 //从开始到3000，5000-7000的多重范围请求
 ```
 
-争对范围请求，响应状态码会返回 `206 Partial Content`的响应报文，对于多重范围请求，响应首部字段 `Content-Type`会标明 `multipart/byteranges`
+针对范围请求，响应状态码会返回 `206 Partial Content`的响应报文，对于多重范围请求，响应首部字段 `Content-Type`会标明 `multipart/byteranges`
 
 * 内容协商返回最合适的内容
 
