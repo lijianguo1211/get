@@ -59,7 +59,7 @@ If-Range: 资源未更新时发送实体的byte请求
 
 Max-Forwards: 最大传输逐跳数
 
-Proxy-Authenticate: 代理服务器要求客户端的认证信息
+Proxy-Authorization: 代理服务器要求客户端的认证信息
 
 Range: 实体的字节范围请求
 
@@ -130,13 +130,13 @@ Last-Modified: 资源的最后修改日期
 分在此类中的首部只对单次转发有效。会因通过缓存或代理不在转发
 
 ```http request
-Connection:
+Connection: 逐跳首部，连接的管理;
 
 Keep-Alive: 指定长连接
 
-Proxy-Authenticate: 代理服务器对客户端的认证信息
+Proxy-Authenticate: 响应标头定义了应该用来访问代理服务器后面的资源的认证方法。它验证对代理服务器的请求，允许它进一步传输请求。 
 
-Proxy-Authorization: 
+Proxy-Authorization: 请求标头包含用于向代理服务器认证用户代理的凭证，通常在服务器响应407 Proxy Authentication Required状态和Proxy-Authenticate标题后。
 
 Trailer: 报文末端的首部一览;
 
