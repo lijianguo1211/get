@@ -50,3 +50,166 @@
 * 中序遍历：先输出当前节点的左子树，再输出当前节点（父节点），最后输出右子树
 
 * 后续遍历：先输出当前节点的左子树，再输出当前节点的右子树，再输出当前节点（父节点）
+
+* 具体实现：
+
+```php
+<?php
+
+class Node
+{
+    private $id;
+
+    private $name;
+
+    private $left = null;
+
+    private $right = null;
+
+    public function __construct($id, $name)
+    {
+        $this->id = $id;
+        $this->name = $name;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    public function setLeft($left)
+    {
+        $this->left = $left;
+    }
+
+    public function setRight($right)
+    {
+        $this->right = $right;
+    }
+
+    /**
+     * 1.先输出root节点
+     * 2.判断当前节点的左子节点是否为空，如果不为空，递归遍历
+     * 3.判断当前节点的右子节点是否为空，如果不为空，递归遍历
+     * Notes:前序遍历
+     * Name: preorderTree
+     * User: LiYi
+     * Date: 2020/1/5
+     * Time: 19:10
+     */
+    public function preorderTree()
+    {
+        echo $this;
+
+        if ($this->left !=  null) {
+            $this->left->preorderTree();
+        }
+
+        if ($this->right != null) {
+            $this->right->preorderTree();
+        }
+    }
+
+    /**
+     * Notes:中序遍历
+     * Name: middleTree
+     * User: LiYi
+     * Date: 2020/1/5
+     * Time: 19:10
+     */
+    public function middleTree()
+    {
+        if ($this->left !=  null) {
+            $this->left->preorderTree();
+        }
+
+        echo $this;
+
+        if ($this->right != null) {
+            $this->right->preorderTree();
+        }
+    }
+
+    /**
+     * Notes:后续遍历
+     * Name: postTree
+     * User: LiYi
+     * Date: 2020/1/5
+     * Time: 19:10
+     */
+    public function postTree()
+    {
+        if ($this->left !=  null) {
+            $this->left->preorderTree();
+        }
+
+        if ($this->right != null) {
+            $this->right->preorderTree();
+        }
+
+        echo $this;
+    }
+
+    public function __toString()
+    {
+        // TODO: Implement __toString() method.
+        return sprintf("当前节点是：%d, name是：%s \n", $this->id, $this->name);
+    }
+}
+
+
+class TreeNode
+{
+    private $root = null;
+
+    public function __construct(Node $root = null)
+    {
+        $this->root = $root;
+    }
+
+    public function middleTree()
+    {
+        if ($this->root != null) {
+            $this->root->middleTree();
+        } else {
+            var_dump('tree is empty');
+        }
+    }
+
+    public function postTree()
+    {
+        if ($this->root != null) {
+            $this->root->postTree();
+        } else {
+            var_dump('tree is empty');
+        }
+    }
+
+    public function preorderTree()
+    {
+        if ($this->root != null) {
+            $this->root->preorderTree();
+        } else {
+            var_dump('tree is empty');
+        }
+    }
+}
+
+$node1 = new Node(1, 'liyi');
+$node2 = new Node(2, 'liyi2');
+$node3 = new Node(3, 'liyi3');
+$node4 = new Node(4, 'liyi4');
+$node2->setLeft($node4);
+$node1->setLeft($node2);
+$node1->setRight($node3);
+$tree = new TreeNode($node1);
+var_dump($tree->preorderTree());
+var_dump($tree->middleTree());
+var_dump($tree->postTree());
+
+```
