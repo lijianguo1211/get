@@ -139,7 +139,7 @@ try {
     //var_dump($middleIndex);
     //$data = [20,50,60,70,80,90,100,280,290,390,490,490,590,590,590,590,590,690,790,890,990,1000,10101,1000000];
     //var_dump($obj->searchValue3($data, 5));
-    var_dump($obj->searchValue2($data, 0, count($data) - 1, 20));
+    //var_dump($obj->searchValue2($data, 0, count($data) - 1, 20));
     //var_dump($obj->searchValue2($data, 0, count($data) - 1, 590));
 } catch (\Exception $e) {
     var_dump($e->getMessage());
@@ -287,8 +287,5 @@ function testDownload()
     // @link http://static.whgxwl.com:6060/file/datasheet/100g-qsfp28-sr4.pdf
     // @link http://static.whgxwl.com:6060/file/datasheet/100g-112g-dual-rate-10km.pdf
 }
-
-
-
 
 
